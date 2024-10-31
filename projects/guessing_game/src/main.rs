@@ -1,8 +1,16 @@
-// To obtain user input and then print the result as output, we need to bring the io input/output library into scope.
-use std::io;
+use std::io; // To obtain user input and then print the result as output, we need to bring the io input/output library into scope.
+use rand::Rng; // First we add the line use rand::Rng;. The Rng trait defines methods that random number generators implement, and this trait must be in scope for us to use those methods.
 
 fn main () {
     println!("Guess the number!");
+
+    let secret_number = rand::thread_rng().gen_range(1..=100);
+    /* Next, we’re adding two lines in the middle. 
+       In the first line, we call the rand::thread_rng function that gives us the particular random number generator we’re going to use: one that is local to the current thread of execution and is seeded by the operating system. 
+       Then we call the gen_range method on the random number generator. 
+       This method is defined by the Rng trait that we brought into scope with the use rand::Rng; statement. 
+       The gen_range method takes a range expression as an argument and generates a random number in the range. 
+       The kind of range expression we’re using here takes the form start..=end and is inclusive on the lower and upper bounds, so we need to specify 1..=100 to request a number between 1 and 100. */
 
     println!("input your guess:");
 

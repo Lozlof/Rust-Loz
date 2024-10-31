@@ -12,6 +12,9 @@ fn main () {
        The gen_range method takes a range expression as an argument and generates a random number in the range. 
        The kind of range expression we’re using here takes the form start..=end and is inclusive on the lower and upper bounds, so we need to specify 1..=100 to request a number between 1 and 100. */
 
+    // Testing purposes.
+    println!("The secret number is: {secret_number}");
+
     println!("input your guess:");
 
     // Use the let statement to create a variable.
@@ -56,4 +59,3 @@ fn main () {
    rand = "0.8.5" */
 /* When you do want to update a crate, Cargo provides the command update, which will ignore the Cargo.lock file and figure out all the latest versions that fit your specifications in Cargo.toml. 
    Cargo will then write those versions to the Cargo.lock file. */
-   // Test

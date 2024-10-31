@@ -5,13 +5,13 @@ An integer is a number without a fractional component. We used one integer type 
 **Integer Table**    
 ```                                         
 Length	Signed	Unsigned         
-8-bit	i8	    u8           
-16-bit	i16	    u16         
-32-bit	i32	    u32           
-64-bit	i64	    64              
-128-bit	i128	u128       
-arch	isize	usize       
-```               
+8-bit	i8	        u8          
+16-bit	i16	        u16         
+32-bit	i32	        u32           
+64-bit	i64	        64                 
+128-bit	i128	    u128       
+arch	isize	    usize       
+```                   
 **Signed -** Means it can be negative, hence the sign "-32".                  
 **Unsigned -** Means it will always be posative.            
 Signed numbers are stored using two’s complement representation.       

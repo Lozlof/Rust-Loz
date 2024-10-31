@@ -33,3 +33,16 @@ fn main () {
     // This line prints the string that now contains the user’s input. The {} set of curly brackets is a placeholder.
     println!("You guessed: {}", guess);
 }
+
+// Rust doesn’t yet include random number functionality in its standard library. However, the Rust team does provide a rand crate with said functionality.
+/* Remember that a crate is a collection of Rust source code files. 
+   The project we’ve been building is a binary crate, which is an executable. 
+   The rand crate is a library crate, which contains code that is intended to be used in other programs and can’t be executed on its own. */
+// Before we can write code that uses rand, we need to modify the Cargo.toml file to include the rand crate as a dependency.
+/* [package]
+   name = "guessing_game"
+   version = "0.1.0"
+   edition = "2021"
+
+   [dependencies]
+   rand = "0.8.5" */
